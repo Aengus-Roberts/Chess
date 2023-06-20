@@ -10,11 +10,20 @@ public:
     int whiteCheck;
     int blackCheck;
 
+    int board[8][8]; // this will be the board
+
     // Constructor
     Board();
 
     // Destructor
     ~Board();
 
-    void U
+    // Rules
+    int isLegalMove();
+
+    void updateBoard();
+
+    void updateView();
+
+    void Reset();
 };
